@@ -8,13 +8,14 @@ storiesOf('Button', module)
   .addDecorator(withKnobs)
   .add('Default', () => (
     <Button
-      label={text('label', 'Default')}
+      label={text('label', 'My Button')}
       onClick={action('click', 'hello')}
     />
   ))
   .add('With Primary', () => (
     <Button label="Primary Button" onClick={action('click')} />
   ))
+
   .add('With Outline', () => (
     <Button
       label="Ouline Button"
